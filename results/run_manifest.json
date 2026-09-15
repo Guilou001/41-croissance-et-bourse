@@ -1,0 +1,29 @@
+{
+  "completed_at": "2026-09-15T21:09:30.357879+00:00",
+  "seconds": 0.7613832919996639,
+  "python": "3.12.14 (main, Aug 14 2026, 15:24:41) [Clang 22.1.3 ]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "lock_sha256": "05f1491730defe56683c4d4023f9c0ac797fdfcec1724166a920c396e28b3079",
+  "protocol_sha256": "2eb90833861e338b029a98ca1e9f92afa8422c1a09e51b4429e3c534036f5d39",
+  "data_manifest_sha256": "d8a4d9a224ee3c89276c1a63e0d6cf6c57069342bc6e4cb69c1437c603e2fb72",
+  "source_files": {
+    "src/crb/__init__.py": "ca28617888e36e2353bbe2d7287f7b38639c0d11448781bc1ce95a27115f9b6a",
+    "src/crb/cli.py": "917aadc38bd594df961f781f0b8252a02d7a94fe6df822d3f4e2d90ea90c4ce5",
+    "src/crb/experiment.py": "30ca8985250ff1843137bbd81ad117317a6380ca50eb36f4f99f2c2df7df7d4c",
+    "src/crb/model.py": "eabd2e079f118442486c2e221f35ea88f2e53df279055174c9c3d967e24b4a47",
+    "src/crb/publication.py": "bd437d1cd4f141fd8e438e8f075e5e6d5e524ac1ee82be718ca3a3a8b946b204",
+    "src/crb/rendering.py": "10351db48e12e6628e59fd91faad30c91688f7e7060fddf8950aa12cdc34d594",
+    "src/crb/support.py": "327b619a696ac885d7d64ca0f6274520c4ab8afffad347ef77dbc8454486f72b",
+    "src/crb/workbook_data.py": "393a172385abb1bdf1d99a8dd3f3e3aca4ee5565d360c2d2e81193a5415cd26d"
+  },
+  "tables": {
+    "results/tables/bootstrap_intervals.csv": "80143a8380521db24b0d994433ce5d2bbe8704aecc82b5a4941ed27f1526af80",
+    "results/tables/country_growth_returns.csv": "4e25b96647fd3cfd1cf9fa4c3c26d769d9c3488b4bd0bca2ab0849e79e9312e2",
+    "results/tables/coverage.csv": "1b5d0ab409a8d669c4ad8a33350f25a9544cb68eddf2f3067696f1b6d0857056",
+    "results/tables/forecast_scores.csv": "85626e661a840359390af335b4db27574b051e1a788817a6d511f04f772e97ea",
+    "results/tables/forecast_uncertainty.csv": "6a255dc60ef9edd336d429c398ea3329d647b6cef4671c96a8603427df57594d",
+    "results/tables/forecasts.csv": "6c6a4293f6af4f34df5506725db72a9df6598bc75352e5d6eac7f4a126e140bc",
+    "results/tables/leave_one_country_out.csv": "1e66ada27fa6ecef7606ac47f43d36abd78763756bcb8b903017ce2653ea0c47",
+    "results/tables/period_correlations.csv": "a5262c49d4341abefedbe2c15068cdc6e51da320d74493e7fd5765924fc9ac89"
+  }
+}

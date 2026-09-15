@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Merci de citer cette étude en précisant sa version et ses sources."
+title: "Un pays qui s’enrichit enrichit-il ses actionnaires ?"
+authors:
+  - family-names: Vaudescal
+    given-names: Guillaume
+version: 1.0.0
+date-released: 2026-09-15
+url: "https://github.com/Guilou001/41-croissance-et-bourse"
+type: software
+license: MIT

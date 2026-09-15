@@ -1,0 +1,270 @@
+{
+  "title": "Un pays qui s’enrichit enrichit-il ses actionnaires ?",
+  "repository": "https://github.com/Guilou001/41-croissance-et-bourse",
+  "tables": [
+    {
+      "name": "Résultats",
+      "subtitle": "Moyennes nationales, mêmes années pour chaque pays d’une fenêtre",
+      "headers": [
+        "Première année",
+        "Dernière année",
+        "Pays",
+        "Corrélation des taux composés",
+        "Corrélation des rangs"
+      ],
+      "formats": [
+        "0",
+        "0",
+        "0",
+        "0.00",
+        "0.00"
+      ],
+      "rows": [
+        [
+          1950,
+          2020,
+          16,
+          -0.2064729047,
+          -0.2117647059
+        ],
+        [
+          1900,
+          2011,
+          15,
+          -0.1738620565,
+          -0.1535714286
+        ],
+        [
+          1900,
+          1949,
+          15,
+          0.3844705485,
+          0.4035714286
+        ],
+        [
+          1950,
+          1984,
+          16,
+          0.0257343529,
+          -0.0470588235
+        ],
+        [
+          1985,
+          2020,
+          16,
+          0.2265911282,
+          0.1147058824
+        ],
+        [
+          2000,
+          2020,
+          16,
+          0.5445795912,
+          0.5205882353
+        ]
+      ]
+    },
+    {
+      "name": "Prévisions",
+      "subtitle": "Prévisions annuelles de 1985 à 2020, PIB révisé et décalé",
+      "headers": [
+        "Pays",
+        "Prévisions",
+        "Réduction de l’erreur",
+        "Erreur du modèle",
+        "Erreur du repère"
+      ],
+      "formats": [
+        "@",
+        "0",
+        "0.00%",
+        "0.00%",
+        "0.00%"
+      ],
+      "rows": [
+        [
+          "Ensemble des pays",
+          576,
+          -0.005108282,
+          0.2513423625,
+          0.2507028477
+        ],
+        [
+          "Australia",
+          36,
+          0.0072819736,
+          0.1720054779,
+          0.1726351888
+        ],
+        [
+          "Belgium",
+          36,
+          0.019139446,
+          0.2434219438,
+          0.2457854055
+        ],
+        [
+          "Switzerland",
+          36,
+          -0.009309897,
+          0.2169111551,
+          0.2159084408
+        ],
+        [
+          "Germany",
+          36,
+          -0.0657513636,
+          0.2417324212,
+          0.2341568966
+        ],
+        [
+          "Denmark",
+          36,
+          -0.0516823388,
+          0.2129164544,
+          0.2076189236
+        ],
+        [
+          "Spain",
+          36,
+          0.0092560077,
+          0.2667320948,
+          0.2679751681
+        ],
+        [
+          "Finland",
+          36,
+          0.0111159052,
+          0.3931576659,
+          0.3953612054
+        ],
+        [
+          "France",
+          36,
+          0.0756453334,
+          0.2354832438,
+          0.2449292714
+        ],
+        [
+          "UK",
+          36,
+          -0.0694498214,
+          0.1534787637,
+          0.1484116817
+        ],
+        [
+          "Italy",
+          36,
+          -0.0673686675,
+          0.2896702884,
+          0.2803798033
+        ],
+        [
+          "Japan",
+          36,
+          -0.0196610657,
+          0.2207921386,
+          0.2186531245
+        ],
+        [
+          "Netherlands",
+          36,
+          -0.0100504692,
+          0.2163878808,
+          0.2153086095
+        ],
+        [
+          "Norway",
+          36,
+          -0.0348878806,
+          0.2750136717,
+          0.2703383345
+        ],
+        [
+          "Portugal",
+          36,
+          -0.0019769197,
+          0.3502819085,
+          0.3499361815
+        ],
+        [
+          "Sweden",
+          36,
+          0.0380156227,
+          0.2548374981,
+          0.2598240351
+        ],
+        [
+          "USA",
+          36,
+          0.0511395134,
+          0.15371493,
+          0.1578028603
+        ]
+      ]
+    }
+  ],
+  "example": {
+    "name": "Exemple",
+    "title": "Croissance composée et correction de l’inflation",
+    "subtitle": "Les entrées bleues peuvent être modifiées. Les cellules noires recalculent.",
+    "cells": [
+      {
+        "row": 7,
+        "label": "Rendement de la première année",
+        "value": -0.2,
+        "format": "0.0%"
+      },
+      {
+        "row": 8,
+        "label": "Rendement de la deuxième année",
+        "value": 0.25,
+        "format": "0.0%"
+      },
+      {
+        "row": 10,
+        "label": "Moyenne arithmétique",
+        "formula": "=(B7+B8)/2",
+        "format": "0.00%"
+      },
+      {
+        "row": 11,
+        "label": "Moyenne composée",
+        "formula": "=SQRT((1+B7)*(1+B8))-1",
+        "format": "0.00%"
+      },
+      {
+        "row": 14,
+        "label": "Rendement nominal",
+        "value": 0.2,
+        "format": "0.0%"
+      },
+      {
+        "row": 15,
+        "label": "Inflation",
+        "value": 0.1,
+        "format": "0.0%"
+      },
+      {
+        "row": 17,
+        "label": "Rendement réel exact",
+        "formula": "=(1+B14)/(1+B15)-1",
+        "format": "0.00%"
+      }
+    ],
+    "checks": {
+      "B10": 0.025,
+      "B11": 0,
+      "B17": 0.09090909090909091
+    },
+    "mutation": {
+      "input": "B7",
+      "value": -0.1,
+      "output": "B11",
+      "expected": 0.06066017177982119
+    }
+  },
+  "sources": [
+    "https://www.macrohistory.net/app/download/9834512469/JSTdatasetR6.dta?t=1720600177"
+  ]
+}
