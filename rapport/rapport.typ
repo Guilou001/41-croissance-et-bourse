@@ -7,7 +7,7 @@
   footer: context [
     #set text(size: 8pt, fill: luma(90))
     #grid(columns: (1fr, auto), align: (left, right),
-      [Document de recherche · Version 1.0], [#counter(page).display("1 / 1", both: true)])
+      [Document de recherche · Version 1.0.1], [#counter(page).display("1 / 1", both: true)])
   ],
 )
 #set text(font: ("Libertinus Serif", "Times New Roman", "DejaVu Serif"), size: 10.5pt, lang: "fr")
@@ -30,6 +30,7 @@
 #show link: it => text(fill: rgb("#0072B2"), it)
 
 #align(center)[
+  #set par(justify: false)
   #block(width: 100%)[
     #text(hyphenate: false, size: 18pt, weight: "bold")[Un pays qui s'enrichit enrichit-il ses actionnaires ?]
     #v(0.6em)
@@ -87,7 +88,7 @@ Chaque observation du graphique principal est une paire de moyennes nationales c
 #table(
   columns: 3,
   stroke: (x, y) => if y == 0 { (bottom: 0.6pt) } else { none },
-  align: left + top,
+  align: (left + top, right + top, right + top),
   inset: 5pt,
     [*Pays*],
     [*PIB réel par habitant par an*],
@@ -151,11 +152,11 @@ La corrélation principale vaut -0,21. Lorsque l'on retire un pays à la fois, e
 #table(
   columns: 4,
   stroke: (x, y) => if y == 0 { (bottom: 0.6pt) } else { none },
-  align: left + top,
+  align: (left + top, right + top, right + top, right + top),
   inset: 5pt,
     [*Période*],
     [*Pays*],
-    [*Corrélation des rendements composés*],
+    [*Corrélation entre croissance et rendement*],
     [*Corrélation des rangs*],
     [1950 à 2020],
     [16],
@@ -220,7 +221,7 @@ Sur l'ensemble des 576 prévisions, la réduction d'erreur vaut -0,51 %. Quelque
 #table(
   columns: 3,
   stroke: (x, y) => if y == 0 { (bottom: 0.6pt) } else { none },
-  align: left + top,
+  align: (left + top, right + top, right + top),
   inset: 5pt,
     [*Longueur des blocs*],
     [*Borne basse*],

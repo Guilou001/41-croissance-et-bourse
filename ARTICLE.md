@@ -50,7 +50,7 @@ Chaque observation du graphique principal est une paire de moyennes nationales c
 ![Croissance et rendement](results/figures/croissance_et_rendement.png)
 
 | Pays | PIB réel par habitant par an | Actions en pouvoir d'achat par an |
-| --- | --- | --- |
+| --- | ---: | ---: |
 | Suisse | 1,55 % | 6,33 % |
 | Royaume-Uni | 1,74 % | 6,46 % |
 | Australie | 1,88 % | 5,65 % |
@@ -74,8 +74,8 @@ La corrélation principale vaut -0,21. Lorsque l'on retire un pays à la fois, e
 
 ## 5. Une relation qui dépend de la période
 
-| Période | Pays | Corrélation des rendements composés | Corrélation des rangs |
-| --- | --- | --- | --- |
+| Période | Pays | Corrélation entre croissance et rendement | Corrélation des rangs |
+| --- | ---: | ---: | ---: |
 | 1950 à 2020 | 16 | -0,21 | -0,21 |
 | 1900 à 2011 | 15 | -0,17 | -0,15 |
 | 1900 à 1949 | 15 | 0,38 | 0,40 |
@@ -121,7 +121,7 @@ Une valeur de 5 % signifie que le modèle réduit de 5 % l'erreur quadratique. U
 Sur l'ensemble des 576 prévisions, la réduction d'erreur vaut -0,51 %. Quelques pays bénéficient de la variable. D'autres se dégradent. Le résultat agrégé ne soutient pas une amélioration générale par cette spécification simple.
 
 | Longueur des blocs | Borne basse | Borne haute |
-| --- | --- | --- |
+| --- | ---: | ---: |
 | 3 ans | -13,54 % | 9,81 % |
 | 5 ans | -16,10 % | 9,55 % |
 | 10 ans | -17,11 % | 9,86 % |

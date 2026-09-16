@@ -4,6 +4,8 @@ Une économie peut produire davantage sans que les actions déjà cotées rappor
 
 **Sur {{countries}} pays entre 1950 et 2020, la corrélation entre croissance réelle par habitant et rendement réel des actions vaut {{correlation}}. Son signe change selon la période.** Utiliser la croissance passée pour prévoir les rendements suivants n'améliore pas non plus la prévision moyenne sur l'ensemble des pays.
 
+[Lire l’article](ARTICLE.md) · [Télécharger le PDF](rapport/rapport.pdf) · [Lire l’audit](docs/AUDIT_2026-09-15.md)
+
 ![Croissance et rendement par pays](results/figures/croissance_et_rendement.png)
 
 Chaque point représente un pays, pas une année. Aller vers la droite signifie que le niveau de vie mesuré par le PIB par habitant a davantage augmenté. Monter signifie qu'un investissement en actions a davantage rapporté après inflation et dividendes.
@@ -24,7 +26,7 @@ Notre étude reprend sa question avec des données publiques JST. Elle sépare d
 
 {{period_table}}
 
-Les rendements sont composés et incluent les dividendes. Chaque fenêtre retient seulement les pays entièrement observés. Une corrélation de 1 décrit un mouvement parfaitement commun. Une corrélation proche de zéro indique une relation linéaire faible.
+Les rendements sont composés et incluent les dividendes. Chaque fenêtre retient seulement les pays entièrement observés. Une corrélation de 1 signifie que les moyennes nationales s’alignent parfaitement sur une droite croissante. Le chiffre ne décrit pas leurs mouvements année par année. Une corrélation proche de zéro indique une relation linéaire faible.
 
 ![Relation selon la période](results/figures/periodes.png)
 

@@ -1,34 +1,20 @@
+"""Présentation pédagogique des résultats calculés."""
+
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
+from .labels import NAMES
 from .rendering import BLUE, GREY, ORANGE, compile_article, number, polish, save, style, table, templates
-
-NAMES = {
-    "Australia": "Australie",
-    "Belgium": "Belgique",
-    "Denmark": "Danemark",
-    "Finland": "Finlande",
-    "France": "France",
-    "Germany": "Allemagne",
-    "Italy": "Italie",
-    "Japan": "Japon",
-    "Netherlands": "Pays-Bas",
-    "Norway": "Norvège",
-    "Portugal": "Portugal",
-    "Spain": "Espagne",
-    "Sweden": "Suède",
-    "Switzerland": "Suisse",
-    "UK": "Royaume-Uni",
-    "USA": "États-Unis",
-}
 
 
 def read(name):
+    """Lit une table de résultats CSV depuis le dépôt courant."""
     return pd.read_csv(f"results/tables/{name}.csv")
 
 
 def publish():
+    """Produit les quatre figures et insère les résultats dans les textes relus."""
     style()
     countries = read("country_growth_returns")
     primary = countries[countries.start_year.eq(1950) & countries.end_year.eq(2020)]
@@ -129,7 +115,7 @@ def publish():
         "leave_high": number(leave.pearson.max(), 2),
         "forecast_n": int(score.observations),
         "period_table": table(
-            ["Période", "Pays", "Corrélation des rendements composés", "Corrélation des rangs"],
+            ["Période", "Pays", "Corrélation entre croissance et rendement", "Corrélation des rangs"],
             [
                 [
                     f"{int(r.start_year)} à {int(r.end_year)}",

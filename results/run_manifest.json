@@ -1,20 +1,21 @@
 {
-  "completed_at": "2026-09-15T21:09:30.357879+00:00",
-  "seconds": 0.7613832919996639,
+  "completed_at": "2026-09-16T00:03:42.790777+00:00",
+  "seconds": 0.6646467080008733,
   "python": "3.12.14 (main, Aug 14 2026, 15:24:41) [Clang 22.1.3 ]",
   "platform": "macOS-26.6.2-arm64-arm-64bit",
-  "lock_sha256": "05f1491730defe56683c4d4023f9c0ac797fdfcec1724166a920c396e28b3079",
+  "lock_sha256": "a069001bd42b644f522e63022c68aa921d1bf5c65a3b0a9770c696ec762c66e7",
   "protocol_sha256": "2eb90833861e338b029a98ca1e9f92afa8422c1a09e51b4429e3c534036f5d39",
   "data_manifest_sha256": "d8a4d9a224ee3c89276c1a63e0d6cf6c57069342bc6e4cb69c1437c603e2fb72",
   "source_files": {
     "src/crb/__init__.py": "ca28617888e36e2353bbe2d7287f7b38639c0d11448781bc1ce95a27115f9b6a",
-    "src/crb/cli.py": "917aadc38bd594df961f781f0b8252a02d7a94fe6df822d3f4e2d90ea90c4ce5",
-    "src/crb/experiment.py": "30ca8985250ff1843137bbd81ad117317a6380ca50eb36f4f99f2c2df7df7d4c",
-    "src/crb/model.py": "eabd2e079f118442486c2e221f35ea88f2e53df279055174c9c3d967e24b4a47",
-    "src/crb/publication.py": "bd437d1cd4f141fd8e438e8f075e5e6d5e524ac1ee82be718ca3a3a8b946b204",
-    "src/crb/rendering.py": "10351db48e12e6628e59fd91faad30c91688f7e7060fddf8950aa12cdc34d594",
-    "src/crb/support.py": "327b619a696ac885d7d64ca0f6274520c4ab8afffad347ef77dbc8454486f72b",
-    "src/crb/workbook_data.py": "393a172385abb1bdf1d99a8dd3f3e3aca4ee5565d360c2d2e81193a5415cd26d"
+    "src/crb/cli.py": "568652c9445a354f4454f02c398eb8eaaed47aed2de2b15e31e57b2e5ba02b96",
+    "src/crb/experiment.py": "d1ea87788884cdf8c5dcb88a87276974bb2513133f2df7dc7970160cc85506ef",
+    "src/crb/labels.py": "6db5f7d095f199fcd387f605cc465ef652e58b9ef1765ab90d069bb5d9ee9903",
+    "src/crb/model.py": "f52ec12072bc88480f31c53b99fb49dd641f6e528c77f466f0a5cf120cdde1a7",
+    "src/crb/publication.py": "d6ee73f876c25f6b840cb2bed1d95c0ba3c3ec14b4d07d01d5097b263a3c81b2",
+    "src/crb/rendering.py": "b5546dc14f9ff5dcb706640bec0268f333a72e12db75cd10dfd42343d6bfae61",
+    "src/crb/support.py": "e9f173b1573ee8c19ab0488288173088f2deb1f0ab3757514a3e7c6c929c2ede",
+    "src/crb/workbook_data.py": "fd64a7c3c85251fd75c9f1d526e168d82540eea6e00b1b43d896d712f2fc2349"
   },
   "tables": {
     "results/tables/bootstrap_intervals.csv": "80143a8380521db24b0d994433ce5d2bbe8704aecc82b5a4941ed27f1526af80",
@@ -24,6 +25,7 @@
     "results/tables/forecast_uncertainty.csv": "6a255dc60ef9edd336d429c398ea3329d647b6cef4671c96a8603427df57594d",
     "results/tables/forecasts.csv": "6c6a4293f6af4f34df5506725db72a9df6598bc75352e5d6eac7f4a126e140bc",
     "results/tables/leave_one_country_out.csv": "1e66ada27fa6ecef7606ac47f43d36abd78763756bcb8b903017ce2653ea0c47",
-    "results/tables/period_correlations.csv": "a5262c49d4341abefedbe2c15068cdc6e51da320d74493e7fd5765924fc9ac89"
+    "results/tables/period_correlations.csv": "a5262c49d4341abefedbe2c15068cdc6e51da320d74493e7fd5765924fc9ac89",
+    "results/workbook_data.json": "c01cceb53719dc0f3e640df3c8ee3321835a8df87e8ca8b93dfba936eed0b655"
   }
 }

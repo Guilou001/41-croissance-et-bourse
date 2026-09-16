@@ -87,3 +87,8 @@ def test_country_missing_one_year_is_excluded_from_balanced_panel():
 def test_bankruptcy_not_converted_to_finite_geometric_gain():
     with pytest.raises(ValueError):
         geometric([0.1, -1])
+
+
+def test_zero_publication_lag_is_rejected():
+    with pytest.raises(ValueError, match="Délai positif"):
+        forecasts(pd.DataFrame(), lag=0)

@@ -9,6 +9,7 @@ from .support import block_indices, config, save_table
 
 
 def load_panel():
+    """Charge les sources, aligne les dates et applique les unités documentées."""
     d = pd.read_stata("data/raw/jst.dta", convert_categoricals=False).sort_values(["iso", "year"])
     d["growth"] = d.groupby("iso").rgdpmad.pct_change(fill_method=None)
     d["inflation"] = d.groupby("iso").cpi.pct_change(fill_method=None)
@@ -17,6 +18,7 @@ def load_panel():
 
 
 def balanced(d, start, end):
+    """Retient les pays entièrement observés sur chaque année de la fenêtre."""
     d = d[d.year.between(start, end)]
     growth = d.pivot(index="year", columns="iso", values="growth").reindex(range(start, end + 1))
     returns = d.pivot(index="year", columns="iso", values="real_equity").reindex(range(start, end + 1))
@@ -26,6 +28,7 @@ def balanced(d, start, end):
 
 
 def run():
+    """Exécute l’expérience et les sensibilités annoncées dans le protocole."""
     c = config()
     d = load_panel()
     country_names = d.drop_duplicates("iso").set_index("iso").country.to_dict()

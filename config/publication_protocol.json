@@ -1,0 +1,32 @@
+{
+  "seed": 20260915,
+  "primary_start": 1950,
+  "primary_end": 2020,
+  "subperiods": [
+    [
+      1900,
+      1949
+    ],
+    [
+      1950,
+      1984
+    ],
+    [
+      1985,
+      2020
+    ],
+    [
+      2000,
+      2020
+    ]
+  ],
+  "bootstrap_draws": 5000,
+  "block_years": [
+    3,
+    5,
+    10
+  ],
+  "lagged_growth_years": 5,
+  "prediction_start": 1985,
+  "predictor_release_lag_years": 2
+}

@@ -5,6 +5,8 @@ from pathlib import Path
 
 import pandas as pd
 
+from .labels import NAMES
+
 RULE = {
     "fixed": "Montant constant",
     "percentage": "Pourcentage du solde",
@@ -22,8 +24,11 @@ PORT = {
 
 
 def table(name, subtitle, frame, columns):
+    """Prépare le tableau de lecture en conservant les colonnes et leur ordre."""
     d = frame[[c[0] for c in columns]].copy()
     for col in d:
+        if col == "country":
+            d[col] = d[col].map(lambda name: NAMES.get(name, name))
         if col == "rule":
             d[col] = d[col].map(RULE)
         if col == "portfolio":
@@ -38,18 +43,22 @@ def table(name, subtitle, frame, columns):
 
 
 def example(title, note, cells, checks):
+    """Décrit les entrées et formules de l’exemple arithmétique Excel."""
     return {"name": "Exemple", "title": title, "subtitle": note, "cells": cells, "checks": checks}
 
 
 def val(row, label, value, fmt="0.00"):
+    """Décrit une cellule d’entrée numérique et son format d’affichage."""
     return {"row": row, "label": label, "value": value, "format": fmt}
 
 
 def formula(row, label, expression, fmt="0.00"):
+    """Décrit une cellule calculée et sa formule Excel explicite."""
     return {"row": row, "label": label, "formula": expression, "format": fmt}
 
 
 def build():
+    """Prépare la sélection Excel depuis les tables calculées et l’exemple connu."""
     root = Path.cwd()
     p = json.loads(Path("config/project.json").read_text())
 
